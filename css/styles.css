@@ -1,0 +1,455 @@
+body {
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    color:grey;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 20px;
+}
+
+.navbar {
+    margin: 40px;
+}
+
+ul {
+    width: 100%;
+    display: table;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    float: none;
+    padding: 30px;
+}
+
+.nav-link {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: darkgray;
+    box-shadow: -2px 3px 8px #d2cdcd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 20%;
+}
+
+.formulario {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.conteudo-formulario {
+    width: 50%;
+    float: left;
+}
+
+.conteudo-formulario p {
+    margin: 17px 0 0 0;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+.form {
+    float: right;
+    font-size: 12px;
+    width: 50%;
+}
+
+.form-group input {
+    width: 320px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.form-group {
+    margin: 8px;
+}
+
+.form-radio {
+    margin: 13px 12px 14px 8px
+}
+
+/* The container */
+.radio {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 20px;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+.botao-form {
+    margin: 8px;
+    width: 320px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 14px;
+    color: darkgray;
+    background: white;
+    cursor: pointer;
+}
+
+.tituloProduto {
+    margin: 50px 0;
+}
+
+.tituloProduto h3 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.tituloProduto h3 > span {
+    background: #fff;
+    padding: 0 10px;
+    color: grey;
+}
+
+.item-produto {
+    position: relative;
+    float: left;
+    padding: 0 15px;
+    margin: 0 0 30px;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.item-produto img {
+    display: block;
+    margin: 0 0 12px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 25%;
+}
+
+.lista-produtos {
+    border: none;
+    position: relative;
+    margin: 0 -14px;
+    width: 103%;
+    color: darkgray;
+}
+
+.borda {
+    position: relative;
+    background: #fff;
+    border: 9px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.produto-info {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 12px;
+    height: 100%;
+}
+
+.produto-info h4 {
+    font-weight: normal;
+}
+
+.produto-info p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.botao-produto {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 7px 25%;
+    color: darkgray;
+    background: white;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.botao-mais{
+    text-align: center;
+    margin: 30px;
+}
+.botao-mais-link{
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 10px 50px;
+    font-size: 14px;
+    color: darkgray;
+    box-shadow: -2px 3px 8px #d2cdcd;
+    cursor: pointer;
+}
+
+.novidade{
+    margin-top: 70px;
+}
+
+.form-final{
+    text-align: center;
+    font-size: 14px;
+}
+
+.form-grupo{
+    display: inline-block;
+    margin: 15px;
+}
+.form-grupo label{
+    float: left;
+}
+.bota-form-final{
+    display: block;
+}
+.form-grupo input{
+    width: 320px;
+    height: 20px;
+    margin-top: 8px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+
+.color{
+    background-color: #2196F3;
+}
+
+.trap-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.trap-container svg {
+    position: absolute;
+}
+.trap-content {
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    height: 80%;
+    width: 100%;
+    bottom: 10%;
+    color: white;
+}
+.trap-content-final{
+    position: relative;
+    top: 10%;
+    height: 80%;
+    width: 100%;
+    bottom: 10%;
+    color: white;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.texto-final{
+    width: 100%;
+    padding: 10px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+@media only screen and (max-width: 800px){
+    header {
+    text-align: left;
+    }
+
+    h3{
+        margin-left: 5px;
+    }
+
+    h2{
+        margin-left: 8px;
+    }
+    p{
+        margin: 10px 8px;
+    }
+    .navbar-nav{
+        border: none;
+        position: relative;
+        margin: 0 -14px;
+        width: 103%;
+        color: darkgray;
+    }
+
+    .nav-item{
+        position: relative;
+        float: left;
+        padding: 0 15px;
+        margin: 0 0 30px;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .nav-link{
+        padding: 10px 17px;
+        width: 100%;
+    }
+    .container{
+        margin: 0 5%;
+    }
+
+    .conteudo-formulario{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form-group{
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .form-group input{
+        width: 100%;
+        height: auto;
+    }
+    .botao-form{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .item-produto{
+        width: 100%;
+    }
+
+    .item-produto img{
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+        height: 200px;
+    }
+    .form-grupo{
+        display: block;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .form-grupo input{
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+        padding-top: 14px;
+
+    }
+    .form-grupo label{
+    }
+
+    .trap-content-final{
+        display: block;
+        top: 60%;
+        height: 0%;
+    }
+    .texto-final{
+        position: relative;
+    }
+}
