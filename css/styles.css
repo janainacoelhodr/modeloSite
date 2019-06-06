@@ -412,7 +412,7 @@ li {
 
     .form-group input{
         width: 100%;
-        height: auto;
+        margin-top: 5px;
     }
     .botao-form{
         margin-left: 0;
@@ -428,6 +428,7 @@ li {
         float: left;
         margin-right: 10px;
         height: 200px;
+        margin-top: 10%;
     }
     .form-grupo{
         display: block;
@@ -442,6 +443,7 @@ li {
 
     }
     .form-grupo label{
+        margin-bottom: 7px;
     }
 
     .trap-content-final{
@@ -451,5 +453,9 @@ li {
     }
     .texto-final{
         position: relative;
+    }
+
+    .produto-info{
+        display: table;
     }
 }
