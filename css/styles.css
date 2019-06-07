@@ -52,13 +52,12 @@ li {
 .nav-link {
     text-align: center;
     text-decoration: none;
-    border: 1px solid gainsboro;
+    border: #FF891F;
     border-radius: 4px;
     padding: 10px 30px;
     font-size: 14px;
-    color: darkgray;
-    box-shadow: -2px 3px 8px #d2cdcd;
-    background-color: white;
+    color: #EFECEC;
+    background-color: #FF891F;
     cursor: pointer;
 }
 
@@ -142,7 +141,7 @@ li {
 
 /* When the radio button is checked, add a blue background */
 .radio input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #332C40;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -172,12 +171,12 @@ li {
     width: 320px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid darkgray;
+    border: 1px solid #562668;
     border-radius: 4px;
     padding: 10px 30px;
     font-size: 14px;
-    color: darkgray;
-    background: white;
+    color: #FBFAFB;
+    background: #562668;
     cursor: pointer;
 }
 
@@ -253,14 +252,16 @@ li {
 .botao-produto {
     text-align: center;
     text-decoration: none;
-    border: 1px solid gainsboro;
+    border: 1px solid #562668;
     border-radius: 4px;
     padding: 7px 25%;
-    color: darkgray;
-    background: white;
+    color: #FBFAFB;
+    background: #562668;
     margin-top: 10px;
     width: 100%;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
 }
 
 .botao-mais{
@@ -270,13 +271,13 @@ li {
 .botao-mais-link{
     text-align: center;
     text-decoration: none;
-    border: 1px solid gainsboro;
+    border: 1px solid #FF891F;
     border-radius: 4px;
     padding: 10px 50px;
     font-size: 14px;
-    color: darkgray;
-    box-shadow: -2px 3px 8px #d2cdcd;
+    color: #FBFAFB;
     cursor: pointer;
+    background-color: #FF891F;
 }
 
 .novidade{
@@ -355,6 +356,27 @@ li {
     bottom:0;
     right:0;
 }
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    display: flex;
+    padding: 0.5em;
+    width: 22%;
+    margin-right: 1%;
+}
+.list-content{
+    width: 100%;
+}
+.list-content img{
+    width: 100%;
+}
+
+.tamanho{
+    height: 600px;
+}
 @media only screen and (max-width: 800px){
     header {
     text-align: left;
@@ -412,7 +434,7 @@ li {
 
     .form-group input{
         width: 100%;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .botao-form{
         margin-left: 0;
@@ -457,5 +479,11 @@ li {
 
     .produto-info{
         display: table;
+    }
+    .botao-produto{
+        position: relative;
+    }
+    .tamanho{
+        height: auto;
     }
 }
